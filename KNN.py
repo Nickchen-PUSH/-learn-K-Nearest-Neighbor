@@ -18,5 +18,6 @@ class KNearestNeighbor:
             distances = np.sum(np.abs(self.Xtr-X[i,:]),axis=1)
             min_index = np.argmin(distances)
             Ypred = self.Ytr[min_index]
+            print(f"Comparing {i}")
 
         return Ypred
